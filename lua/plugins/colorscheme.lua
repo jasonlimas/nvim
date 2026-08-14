@@ -1,15 +1,5 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000, -- load before other plugins
-  },
-  {
-    "bluz71/vim-moonfly-colors",
-    name = "moonfly",
-    priority = 1000,
-  },
-  {
     "EdenEast/nightfox.nvim",
     config = function()
       vim.cmd.colorscheme("carbonfox")
