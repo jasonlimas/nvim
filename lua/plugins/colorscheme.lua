@@ -2,17 +2,31 @@ return {
   {
     "EdenEast/nightfox.nvim",
     config = function()
-      vim.cmd.colorscheme("carbonfox")
+      -- vim.cmd.colorscheme("carbonfox")
       vim.api.nvim_set_hl(0, "SnacksIndentScope", {
         fg = "#6b7280",
       })
     end,
   },
-
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "carbonfox",
-    },
+    "oskarnurm/koda.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("koda-moss")
+      vim.api.nvim_set_hl(0, "SnacksIndentScope", {
+        fg = "#6b7280",
+      })
+      -- require("koda").setup({ transparent = true })
+    end,
+  },
+  {
+    "wtfox/luna.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.cmd.colorscheme("luna")
+    end,
+    opts = {},
   },
 }
