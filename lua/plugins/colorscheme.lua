@@ -13,11 +13,11 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
+      require("koda").setup({ transparent = true })
       vim.cmd.colorscheme("koda-moss")
       vim.api.nvim_set_hl(0, "SnacksIndentScope", {
         fg = "#6b7280",
       })
-      -- require("koda").setup({ transparent = true })
     end,
   },
   {
