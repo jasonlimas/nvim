@@ -26,10 +26,14 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("cyberdream").setup({ transparent = true })
+      require("cyberdream").setup({
+        transparent = true,
+        italic_comments = true,
+      })
       vim.api.nvim_set_hl(0, "SnacksIndentScope", {
         fg = "#6b7280",
       })
+
       vim.cmd("colorscheme cyberdream-muted")
     end,
   },
